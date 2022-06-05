@@ -54,6 +54,10 @@ npm install
 
 See instructional video below:
 
+
+https://user-images.githubusercontent.com/76273697/172041952-c56c41cf-17c3-43cd-b387-e20e70e60962.mp4
+
+
 ---
 
 ## Contributors
