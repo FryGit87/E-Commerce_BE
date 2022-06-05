@@ -18,14 +18,14 @@ router.get("/", async (req, res) => {
 
 // find one category by its `id` value
 // be sure to include its associated Products
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const catagoryData = await Category.findByPk(req.params.id, {
-      include: [{ model: Product}]
+      include: [{ model: Product }],
     });
 
     if (!catagoryData) {
-      res.status(404).json({ message: 'No matching id!' });
+      res.status(404).json({ message: "No matching id!" });
       return;
     }
 
@@ -33,12 +33,11 @@ router.get("/:id", (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
 });
 
 // create a new category
-router.post("/", (req, res) => {
-    try {
+router.post("/", async (req, res) => {
+  try {
     const catagoryData = await Category.create(req.body);
     res.status(200).json(catagoryData);
   } catch (err) {
@@ -47,15 +46,15 @@ router.post("/", (req, res) => {
 });
 
 // update a category by its `id` value
-router.put("/:id", (req, res) => {
-   try {
+router.put("/:id", async (req, res) => {
+  try {
     const catagoryData = await Category.update(req.body, {
       where: {
         id: req.params.id,
       },
     });
     if (!catagoryData[0]) {
-      res.status(404).json({ message: 'No matching id!' });
+      res.status(404).json({ message: "No matching id!" });
       return;
     }
     res.status(200).json(catagoryData);
@@ -65,16 +64,16 @@ router.put("/:id", (req, res) => {
 });
 
 // delete a category by its `id` value
-router.delete("/:id", (req, res) => {
-   try {
+router.delete("/:id", async (req, res) => {
+  try {
     const catagoryData = await Category.destroy({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     });
 
     if (!catagoryData) {
-      res.status(404).json({ message: 'No matching id!' });
+      res.status(404).json({ message: "No matching id!" });
       return;
     }
 
