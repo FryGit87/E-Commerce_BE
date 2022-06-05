@@ -72,6 +72,10 @@ For link to video [Click here!](https://drive.google.com/file/d/1xbLFSyQrbEgBHYw
 or
 See instructional video below:
 
+
+https://user-images.githubusercontent.com/76273697/172043124-5e88bf6b-af76-4a16-882c-c30a504c863c.mp4
+
+
 ---
 
 ## Contributors
