@@ -48,10 +48,28 @@ Install required dependencies
 npm install
 ```
 
----
+Open intergrated terminal in the main directory then follow the following commands:
+
+Run mySQL:
+
+![mySQL](./media/mysql.png)
+
+Run schema, Create Database:
+
+![schema](./media/schema.png)
+
+Populate database:
+
+![seed](./media/seed.png)
+
+Start the local server:
+
+![server](./media/server.png)
 
 ## Usage
 
+For link to video [Click here!](https://drive.google.com/file/d/1xbLFSyQrbEgBHYwUSR29_JS5zpAUyOE8/view?usp=sharing)
+or
 See instructional video below:
 
 ---
